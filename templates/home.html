@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <p>{{ str }}</p>
+    <p>
+        {% for i in studyList %}
+            {{ i }}
+        {% endfor %}
+    </p>
+    <p>
+        {% for key, value in content_info.items %}
+            {{ key }}: {{ value }}
+        {% endfor %}
+    </p>
+    <p>
+        {% for item in list %}
+            {{ item }}{% if not forloop.last %},{% endif %}
+        {% endfor %}
+    </p>
+
+    <p>用户登录</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        账户:<input type="text" name="name" /><br/>
+        密码:<input type="text" name="password" /><br/><br/>
+        <input type="submit" value="登陆"/>
+    </form>
+</body>
+</html>
