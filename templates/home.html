@@ -25,8 +25,8 @@
     <p>用户登录</p>
     <form action="" method="post">
         {% csrf_token %}
-        账户:<input type="text" name="name" /><br/>
-        密码:<input type="text" name="password" /><br/><br/>
+        <label>账户:</label><input type="text" name="name" value="{{ content_info.name }}" maxlength="30"/><br/>
+        <label>密码:</label><input type="text" name="password" value="{{ content_info.password }}" maxlength="36"/><br/><br/>
         <input type="submit" value="登陆"/>
     </form>
 </body>
