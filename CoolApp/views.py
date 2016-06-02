@@ -54,6 +54,6 @@ def home(request):
     else:
         string = u'你好世界，你好Python，你好Django，你好我自己！！！'
         studyList = ['HTML', 'JS', 'CSS', 'JQuery', 'Python', 'Django']
-        content_info = {'name': u'Eric', 'intro': u'go go go'}
+        content_info = {'name': u'pengtao', 'password': u'123456'}
         list = map(str, range(100))
         return render(request, 'home.html', {'str': string, 'studyList': studyList, 'content_info': content_info, 'list': list})
