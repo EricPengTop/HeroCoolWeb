@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^$', views.home),
     url(r'^admin/', admin.site.urls),
     url(r'^login_one_method/$', views.login_one_method),
-    url(r'^login_two_method/(\S+)/(\S+)/$', views.login_two_method)
+    url(r'^login_two_method/(\S+)/(\S+)/$', views.login_two_method),
 ]
