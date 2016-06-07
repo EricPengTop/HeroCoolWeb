@@ -56,5 +56,5 @@ def home(request):
         studyList = ['HTML', 'JS', 'CSS', 'JQuery', 'Python', 'Django']
         content_info = {'name': u'pengtao', 'password': u'123456'}
         List = map(str, range(100))
-        return render(request, 'home.html',
+        return render(request, 'coolapp/home.html',
                       {'str': string, 'studyList': studyList, 'content_info': content_info, 'list': List})
