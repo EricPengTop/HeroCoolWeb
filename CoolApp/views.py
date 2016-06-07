@@ -2,8 +2,7 @@
 
 from django.http.response import HttpResponse
 from django.shortcuts import render
-from CoolApp.forms import LoginForm, NewsForm
-from django.utils import timezone
+from CoolApp.forms import LoginForm
 
 
 # Create your views here.
