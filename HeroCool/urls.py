@@ -17,6 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 import CoolApp.views as views
 import ShopApp.views as shop_views
+import TestApp.views as test_views
 
 urlpatterns = [
     url(r'^$', views.home),
@@ -25,6 +26,6 @@ urlpatterns = [
     url(r'^login_two_method/(\S+)/(\S+)/$', views.login_two_method),
     url(r'product/create/$', shop_views.create_product),
     url(r'product/list/$', shop_views.list_product),
-    url(r'product/edit/(?P[^/]+)/$', shop_views.edit_product),
-    url(r'product/view/(?P[^/]+)/$', shop_views.view_product),
+    url(r'test/student_list/$', test_views.student_list),
+    url(r'test/student_list2/$', test_views.student_list2),
 ]
